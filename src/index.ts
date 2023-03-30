@@ -22,3 +22,7 @@ let objectColc: {name: string; age?:number; color: string|number;}
   age: 4,
   color: "green"
 }
+
+let objectOne: object;
+
+console.log("test watching");

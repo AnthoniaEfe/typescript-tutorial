@@ -1,19 +1,22 @@
-var character = "tonia";
+"use strict";
+const character = "tonia";
 console.log(character);
-var inputs = document.querySelectorAll('input');
-inputs.forEach(function (input) {
+const inputs = document.querySelectorAll('input');
+inputs.forEach((input) => {
     console.log(input);
 });
-var circ = function (diameter) {
+const circ = (diameter) => {
     return diameter * Math.PI;
 };
 console.log(circ(20));
-var mixed;
+let mixed;
 mixed = ["air", 9, "balloon", 12, 1, 6, "pea"];
 mixed.push("girl");
-var objectColc;
+let objectColc;
 objectColc = {
     name: "belt",
     age: 4,
     color: "green"
 };
+let objectOne;
+console.log("test watching");
