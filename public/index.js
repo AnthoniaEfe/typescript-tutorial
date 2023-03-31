@@ -20,3 +20,13 @@ objectColc = {
 };
 let objectOne;
 console.log("test watching");
+//function signatures
+let greet;
+greet = (number = 35, word = "hello there") => {
+    console.log(number, word);
+};
+//function signatures with type aliases
+let obj;
+obj = (person) => {
+    console.log(`${person.name}, is ${person.age} years old and is a ${person.gender} `);
+};

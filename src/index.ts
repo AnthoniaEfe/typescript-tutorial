@@ -25,4 +25,20 @@ let objectColc: {name: string; age?:number; color: string|number;}
 
 let objectOne: object;
 
-console.log("test watching");
+//function signatures
+let greet :(a: number, b: string) => void;
+
+greet= (num: number, word: string)=>{
+console.log(num, word)
+}
+
+greet(24, "hello")
+
+//function signatures with type aliases
+let obj: (person:human)=>void|object;
+type human= {name: string, age:number, gender: boolean}
+obj =(person:human)=>{
+  console.log(`${person.name}, is ${person.age} years old and is a ${person.gender} `)
+}
+
+obj({name: "tonia", age:23, gender: true})
