@@ -19,14 +19,15 @@ objectColc = {
     color: "green"
 };
 let objectOne;
-console.log("test watching");
 //function signatures
 let greet;
-greet = (number = 35, word = "hello there") => {
-    console.log(number, word);
+greet = (num, word) => {
+    console.log(num, word);
 };
+greet(24, "hello");
 //function signatures with type aliases
 let obj;
 obj = (person) => {
     console.log(`${person.name}, is ${person.age} years old and is a ${person.gender} `);
 };
+obj({ name: "tonia", age: 23, gender: true });
